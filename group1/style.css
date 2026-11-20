@@ -1,0 +1,102 @@
+/* Apply a style to the entire page with one selector */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff8f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8b5e5e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Hover selector */
+nav a:hover {
+    background-color: #f2d7d7;
+    color: #5c3a3a;
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 25px auto;
+    line-height: 1.7;
+}
+
+h2 {
+    color: #8b5e5e;
+}
+
+/* Span class */
+.highlight {
+    color: #a94462;
+    font-weight: bold;
+}
+
+/* Floating element with text and an image */
+.featured {
+    float: left;
+    width: 260px;
+    background-color: #f7e7e7;
+    padding: 15px;
+    margin: 0 25px 15px 0;
+    border: 1px solid #d9b8b8;
+}
+
+.featured img {
+    width: 100%;
+    height: auto;
+}
+
+/* Class selector applied to multiple product divs */
+.product {
+    background-color: #f7e7e7;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
+
+.product:hover {
+    background-color: #efd4d4;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eadada;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    clear: both;
+    background-color: #8b5e5e;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}

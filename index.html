@@ -2,74 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tarkov Tavern</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Stephen Hubis - Web Development Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333333;
+    }
+
+    header {
+      background-color: #1b2b44;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #0f1b2d;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .section {
+      width: 90%;
+      margin: 30px auto;
+    }
+
+    .box {
+      display: inline-block;
+      width: 280px;
+      background-color: white;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      vertical-align: top;
+    }
+
+    .box img {
+      width: 100%;
+      height: 170px;
+      border: 1px solid #cccccc;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #2f80ed;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #0f1b2d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>TARKOV TAVERN</h1>
-        <p class="tagline">Your ultimate destination for all things Tarkov. Made with love.</p>
-    </header>
+  <header>
+    <h1>Stephen Hubis</h1>
+    <p>Web Development Portfolio</p>
+  </header>
 
-    <main>
-        <section class="menu">
-            <h2>OUR MENU</h2>
+  <nav>
+    <a href="#practice">Practice Activities</a>
+    <a href="#group">Partner Labs</a>
+    <a href="#individual">Individual Assignments</a>
+  </nav>
 
-            <article class="menu-item">
-                <h3>Can of Pate</h3>
-                <img src="pate.jpg" alt="Can of Pate">
-                <p>A delicious can of pate to satisfy your hunger. Perfect for a quick snack or a meal on the go.</p>
-            </article>
+  
+  <div class="section" id="practice">
+    <h2>Practice Activities</h2>
 
-            <article class="menu-item">
-                <h3>A pack of instant noodles</h3>
-                <img src="noodles.jpg" alt="A pack of instant noodles">
-                <p>Quick and easy to prepare, these instant noodles are perfect for a fast meal when you're short on time.</p>
-            </article>
+    <div class="box">
+      <img src="images/practice1.jpg" alt="Practice Activity 1">
+      <h3>Electronics Sale</h3>
+      <p>A product listing page using headings, an ordered list, an image, and basic text formatting.</p>
+      <a class="button" href="practice1/index.html">View</a>
+    </div>
 
-            <article class="menu-item">
-                <h3>Can of beef stew</h3>
-                <img src="beef.jpg" alt="Can of beef stew">
-                <p>A hearty can of beef stew, packed with flavor and nutrients. Ideal for a satisfying meal after a long day.</p>
-            </article>
+    <div class="box">
+      <img src="images/practice2.jpg" alt="Practice Activity 2">
+      <h3>Pixel Palace Arcade</h3>
+      <p>An arcade homepage laid out with CSS Grid, using gradient-colored header, sidebar, content, and footer areas.</p>
+      <a class="button" href="practice2/index.html">View</a>
+    </div>
 
-        </section>
+    <div class="box">
+      <img src="images/practice3.jpg" alt="Practice Activity 3">
+      <h3>Forever Gym</h3>
+      <p>A gym membership page built with Bootstrap, featuring pricing cards for three plan levels.</p>
+      <a class="button" href="practice3/index.html">View</a>
+    </div>
+  </div>
 
-        <section class="directions">
-            <h2>DIRECTIONS</h2>
-            <img src="streets.jpg" alt="Display of the restaurant from the inside">
-            <p>We are located in the Northwest of the Streets of Tarkov, just a short walk from the main square.</p>
-            <ol>
-                <li>Head north from the main square.</li>
-                <li>Turn left at the first intersection.</li>
-                <li>Continue straight for about 200 meters.</li>
-                <li>You will find Tarkov Tavern on your left-hand side.</li>
-            </ol>
+  
+  <div class="section" id="group">
+    <h2>Partner Labs</h2>
 
-        </section>
+    <div class="box">
+      <img src="images/group1.jpg" alt="Partner Lab 1">
+      <h3>Handbag Boutique</h3>
+      <p>A multi-page boutique website with navigation, a featured product, and a custom font and color theme.</p>
+      <a class="button" href="group1/index.html">View</a>
+    </div>
 
-    </main>
+    <div class="box">
+      <img src="images/group2.jpg" alt="Partner Lab 2">
+      <h3>Hello Page Customizer</h3>
+      <p>An interactive page that uses JavaScript to change the greeting, message, and background color from a form.</p>
+      <a class="button" href="group2/index.html">View</a>
+    </div>
+  </div>
 
-    <footer>
-        <div class="address">
-            <h3>ADDRESS</h3>
-            <address>
-                Tarkov Tavern<br>
-                123 Main Street<br>
-                Tarkov, Russia<br>
-            </address>
-        </div>
+ 
+  <div class="section" id="individual">
+    <h2>Individual Assignments</h2>
 
-        <div class="location">
-            <h3>LOCATION</h3>
-            <p>Find us in the heart of Tarkov, easily accessible from all major landmarks.</p>
-        </div>
+    <div class="box">
+      <img src="images/ind1.jpg" alt="Individual Assignment 1">
+      <h3>Electronics Sale</h3>
+      <p>A product listing page using headings, an ordered list, an image, and basic text formatting.</p>
+      <a class="button" href="ind1/index.html">View</a>
+    </div>
 
-        <div class="contact">
-            <h3>CONTACT</h3>
-            <p>Email: info@tarkovtavern.com</p>
-            <p>Phone: +7 (123) 456-7890</p>
-        </div>
-    </footer>
+    <div class="box">
+      <img src="images/ind2.jpg" alt="Individual Assignment 2">
+      <h3>Turn Table Records</h3>
+      <p>A vinyl record shop with an album cover gallery and an inventory table of prices and release dates.</p>
+      <a class="button" href="ind2/index.html">View</a>
+    </div>
+
+    <div class="box">
+      <img src="images/ind3.jpg" alt="Individual Assignment 3">
+      <h3>Tarkov Tavern</h3>
+      <p>A themed restaurant menu with food photos, an external stylesheet, and custom fonts.</p>
+      <a class="button" href="ind3/index.html">View</a>
+    </div>
+
+    <div class="box">
+      <img src="images/ind4.jpg" alt="Individual Assignment 4">
+      <h3>Final Project</h3>
+      <p>Final project - coming soon.</p>
+      <a class="button" href="ind4/index.html">View</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Stephen Hubis</p>
+  </footer>
+
+</body>
+</html>

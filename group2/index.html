@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Partner Project 2</title>
+        <script src="project2.js"></script>
+        <link rel="stylesheet" type="text/css" href="styleLab.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="greeting">Hello User!</h1>
+            <p id="welcome">Welcome to our website - I hope you enjoy your visit!</p>
+            <br>
+            <br>
+
+            <label for="userName">Enter your name: </label>
+            <input type="text" id="userName" name="userName"><br/>
+
+
+            <label for="userMessage">Enter a new message: </label>
+            <input type="text" id="userMessage" name="userMessage"><br/>
+
+            <label for="options">Choose a color option for the background: </label>
+            <select name="options" id="options">
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Red">Red</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Change All" onclick="changeAll();">
+        </div>
+
+    </body>
+</html>

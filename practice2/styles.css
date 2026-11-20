@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343a46;
+    color: white;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:
+        "header  header    header"
+        "sidebar content-1 content-1"
+        "sidebar content-2 content-3"
+        "footer  footer    footer";
+    gap: 10px;
+}
+
+.header    { grid-area: header; }
+.sidebar   { grid-area: sidebar; }
+.content-1 { grid-area: content-1; }
+.content-2 { grid-area: content-2; }
+.content-3 { grid-area: content-3; }
+.footer    { grid-area: footer; }
+
+.header, .sidebar, .content-1, .content-2, .content-3, .footer {
+    border: 4px solid #1c1f26;
+    padding: 20px;
+    text-align: center;
+}
+
+.header, .footer {
+    background: linear-gradient(90deg, #6a4fd8, #8e7be0);
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #3ddbd0, #2aa595);
+    text-align: left;
+}
+
+.content-1, .content-2, .content-3 {
+    background: linear-gradient(135deg, #6a4fd8, #2196f3);
+    font-size: 50px;
+}
+
+.content-1 h2 {
+    font-size: 24px;
+}
+
+
+.gray {
+    filter: grayscale(100%);
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+
+.rotate {
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.scale {
+    display: inline-block;
+    transform: scale(1.5);
+}
+
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-20px); }
+}
