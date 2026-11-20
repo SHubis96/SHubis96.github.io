@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Bender";
+    src: url("fonts/Bender.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background: linear-gradient(#333, #1f1f1f);
+    color: #ffffffe8;
+    text-align: center;
+    padding: 20px 16px;
+}
+
+body{
+    font-family: "Bender", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #c4c8c9;
+    background: linear-gradient(#2c2b27, #121212) fixed;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.tagline {
+    margin: 6px 0 0;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px solid #c4c8c9;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.menu-item img, .directions img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px 40px;
+    background: linear-gradient(#333, #1f1f1f);
+    color: #ffffffe8;
+    text-align: center;
+    padding: 20px 16px;
+}
+
+
+.menu, footer {
+    display: none;
+}
+
+.directions {
+    text-align: center;
+}
+
+.directions img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 16px;
+}
+
+.directions ol {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-left: 24px;
+}
+
+
+
+@media (min-width: 600px) {
+    .directions {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu-item {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        column-gap: 20px;
+        align-items: center;
+    }
+
+    .menu-item h3 {
+        grid-column: 1 / -1;
+    }
+
+    .menu-item img {
+        width: 180px;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .address, .location {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .menu-item {
+        grid-template-columns: 450px 1fr;
+    }
+
+    .menu-item img {
+        width: 450px;
+        height: 320px;
+    }
+
+    .address,
+    .location {
+        display: block;
+    }
+
+    .location {
+        max-width: 320px;
+    }
+
+    footer {
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .directions {
+        display: block;
+    }
+}
